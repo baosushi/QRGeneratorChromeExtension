@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <style>
-        button {
-            height: 30px;
-            width: 30px;
-            outline: none;
-        }
-    </style>
-</head>
-
-<body>
-    <button id="changeColor"></button>
-    <script src="popup.js"></script>
-</body>
-
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/jqr.js"></script>
+		<link rel='stylesheet' href='assets/css/font-awesome.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='assets/css/popup.css' type='text/css' media='all' />
+	</head>
+	<body>
+		<center>
+			<div id="qrcode-img"></div>
+			<div id="qrcode-img-buffer"></div>
+			<div id="qrcode-title"></div>
+			<textarea id="qrcode-href" value=""></textarea>
+			<div class="popup-footer">
+				<button id="export" class='pure-button pure-button-primary'>Save image</button>
+				<span class="popup-footer-right">
+					<a id="homepage" target="_blank" href="https://create.generateqrcode.net">
+						<i class="icon-external-link"></i> Google drive intergrated!</a>
+				</span>
+				<span class="popup-footer-left">
+					<span id="version_text">Version: <span id="version">-</span>
+					</span>
+					<a id="settings" href="options.html#pop">
+						<i class="icon-cog"></i>
+					Settings</a>
+				</span>
+			</div>
+		</center>
+		<script type="text/javascript" src="assets/js/popup.js"></script>
+	</body>
 </html>

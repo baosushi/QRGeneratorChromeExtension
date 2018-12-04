@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/options.js"></script>
+		<script src="assets/js/bootstrap-colorpicker.min.js"></script>
+		<link rel='stylesheet' href='assets/css/font-awesome.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='assets/css/options.css' type='text/css' media='all' />
+		<link href="assets/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1>
+			QR Generator <span id="version_span"></span>
+		</h1>
 
-<head>
-    <style>
-        button {
-            height: 30px;
-            width: 30px;
-            outline: none;
-            margin: 10px;
-        }
-    </style>
-</head>
+		<div id="form">
+			<div class="form-group">
+				<label for="img-size">Size of the download image (px):</label>
+				<input type="text" class="form-control" id="img-size" placeholder="300" value="300" />
+			</div>
 
-<body>
-    <div id="buttonDiv">
-    </div>
-</body>
-<script src="options.js"></script>
 
+
+			<label for="cp1">Foreground Color:</label>
+			<div id="cp1" class="input-group colorpicker-component">
+				<input type="text" value="#000000" class="form-control" />
+				<span class="input-group-addon">
+					<i/>
+				</span>
+			</div>
+			<p/>
+
+
+
+
+			<label for="cp2">Background Color:</label>
+			<div id="cp2" class="input-group colorpicker-component">
+				<input type="text" value="#FFFFFF" class="form-control" />
+				<span class="input-group-addon">
+					<i/>
+				</span>
+			</div>
+
+
+
+
+
+
+			<div class="checkbox">
+				<label>
+					<input id="transbg" type="checkbox" /> Transparent Background
+				</label>
+			</div>
+
+
+			<button id="save" type="submit" class="btn btn-default">Save</button> 
+
+		</div>
+
+		<p>
+			<a href="popup.html" id='back-form'>
+				<i class="icon-arrow-left"></i>
+
+						back</a>
+			<span id='show-form'>Suggestion Box</span>
+			<span class='facebook-page'> | <a href="https://www.facebook.com/quickqr" target="_blank">Facebook Page</a>
+			</span>
+		</p>
+	</body>
 </html>
